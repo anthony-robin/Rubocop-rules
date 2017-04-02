@@ -82,13 +82,14 @@ Style/IfInsideElse:
 Style/IndentationWidth:
   Enabled: true
 
+# Enforces the consitent useage of `%`-literal delimiters.
 Style/PercentLiteralDelimiters:
   Enabled: true
   PreferredDelimiters:
-    default:  ()
-    '%i': []
-    '%w': []
-    '%W': []
+    default:  '()'
+    '%i': '[]'
+    '%w': '[]'
+    '%W': '[]'
     '%r': '{}'
 
 Style/SpaceAfterColon:
@@ -179,4 +180,3 @@ Lint/EndAlignment:
 # Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
 Lint/RequireParentheses:
   Enabled: true
-
