@@ -7,7 +7,7 @@ to every projects.
 
 ```yaml
 inherit_from:
-  - ''
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml
 ```
 
 In some case, you might want to override rules: no problem! Just add your new rule **AFTER** the `inherit_from` line:
