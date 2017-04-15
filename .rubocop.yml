@@ -82,7 +82,7 @@ Style/IfInsideElse:
 Style/IndentationWidth:
   Enabled: true
 
-# Enforces the consitent useage of `%`-literal delimiters.
+# Enforces the consistent usage of `%`-literal delimiters.
 Style/PercentLiteralDelimiters:
   Enabled: true
   PreferredDelimiters:
@@ -91,6 +91,11 @@ Style/PercentLiteralDelimiters:
     '%w': '[]'
     '%W': '[]'
     '%r': '{}'
+
+# Checks the indentation of the method name part in method calls that span more than one line
+Style/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: aligned
 
 Style/SpaceAfterColon:
   Enabled: true
@@ -109,6 +114,10 @@ Style/SpaceAroundOperators:
 
 # Defining a method with parameters needs parentheses.
 Style/MethodDefParentheses:
+  Enabled: true
+
+# This cop makes sure that predicates are named properly
+Style/PredicateName:
   Enabled: true
 
 # Do not use return for last method line
@@ -179,4 +188,8 @@ Lint/EndAlignment:
 
 # Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
 Lint/RequireParentheses:
+  Enabled: true
+
+# Checks for unused method arguments
+Lint/UnusedMethodArgument:
   Enabled: true
