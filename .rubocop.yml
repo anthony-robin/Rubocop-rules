@@ -147,6 +147,11 @@ Style/SpaceInsideHashLiteralBraces:
 Style/SpaceInsideParens:
   Enabled: true
 
+# Checks for whitespace within string interpolations.
+Style/SpaceInsideStringInterpolation:
+  Enabled: true
+  EnforcedStyle: no_space
+
 # Check quotes usage according to lint rule below.
 Style/StringLiterals:
   Enabled: true
@@ -168,12 +173,21 @@ Style/Tab:
 Style/TrailingBlankLines:
   Enabled: true
 
+# Checks for trailing comma in array and hash literals
+Style/TrailingCommaInLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
+
 # No trailing whitespace.
 Style/TrailingWhitespace:
   Enabled: true
 
 # This cop looks for unless expressions with else clauses
 Style/UnlessElse:
+  Enabled: true
+
+# Checks for strings that are just an interpolated expression.
+Style/UnneededInterpolation:
   Enabled: true
 
 # Use quotes for string literals when they are enough.
