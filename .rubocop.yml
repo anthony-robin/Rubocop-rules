@@ -7,6 +7,7 @@ AllCops:
     - 'db/schema.rb'
     - 'db/seeds.rb'
     - 'vendor/**/*'
+    - 'node_modules/**/*'
 
 # This cop identifies places where `gsub` can be replaced by `tr` or `delete`.
 Performance/StringReplacement:
