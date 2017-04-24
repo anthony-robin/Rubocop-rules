@@ -37,7 +37,7 @@ Style/CaseIndentation:
 # Checks the style of children definitions at classes and modules
 Style/ClassAndModuleChildren:
   Enabled: true
-  EnforcedStyle: nested
+  EnforcedStyle: compact
 
 # Align comments with method definitions.
 Style/CommentIndentation:
