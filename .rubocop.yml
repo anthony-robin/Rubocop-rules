@@ -71,16 +71,20 @@ Style/ExtraSpacing:
 Style/HashSyntax:
   Enabled: true
 
-# Check whether comments have a leading space after the # denoting the start of the comment
-Style/LeadingCommentSpace:
-  Enabled: true
-
 # If the `else` branch of a conditional consists solely of an `if` node, it can be combined with the `else` to become an `elsif`
 Style/IfInsideElse:
   Enabled: true
 
 # Two spaces, no tabs (for indentation).
 Style/IndentationWidth:
+  Enabled: true
+
+# Check whether comments have a leading space after the # denoting the start of the comment
+Style/LeadingCommentSpace:
+  Enabled: true
+
+# Checks whether some constant value isn't a mutable literal (e.g. array or hash)
+Style/MutableConstant:
   Enabled: true
 
 # Enforces the consistent usage of `%`-literal delimiters.
