@@ -188,8 +188,13 @@ Style/StringLiterals:
 # Check for array literals made up of symbols that are not using the %i() syntax
 Style/SymbolArray:
   Enabled: true
+  
+# Check for trailing comma in parameter lists
+Style/TrailingCommaInArguments:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
 
-# Checks for trailing comma in array and hash literals
+# Check for trailing comma in array and hash literals
 Style/TrailingCommaInLiteral:
   Enabled: true
   EnforcedStyleForMultiline: no_comma
