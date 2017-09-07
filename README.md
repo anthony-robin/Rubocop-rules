@@ -1,18 +1,21 @@
 # Rubocop rules
 
-This project contains the default rubocop rules that can be applied
-to every projects.
+This project contains the default `Rubocop` rules that can be applied to any projects.
 
 ## Getting started
 
 ```yaml
-inherit_from: https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml
+inherit_from:
+  - https://gitlab.devsrv.youboox.org/visible/rubocop-rules/raw/master/.rubocop.yml # Regular cops
+  - https://gitlab.devsrv.youboox.org/visible/rubocop-rules/raw/master/.rubocop-rails.yml # Rails cops
 ```
 
-In some case, you might want to override rules: no problem! Just add your new rule **AFTER** the `inherit_from` line:
+In some case, you might want to override rules: no problem! Just add your new rule **after** the `inherit_from` lines:
 
 ```yaml
-inherit_from: https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml
+inherit_from:
+  - ...
+  - ...
 
 Rails/Date:
   Enabled: false
@@ -31,6 +34,12 @@ Rails/Date:
   ```yaml
   AllCops:
     TargetRubyVersion: 2.4
+  ```
+
+- As the Ruby configuration, you can specify your Rails version as well:
+  ```yaml
+  AllCops:
+    TargetRailsVersion: 5.1
   ```
 
 # Related links
