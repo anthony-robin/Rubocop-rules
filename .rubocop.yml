@@ -146,6 +146,11 @@ Style/ClassAndModuleChildren:
 Style/ConditionalAssignment:
   Enabled: true
 
+# Checks for empty else-clauses, possibly including comments and/or an explicit `nil` depending on the EnforcedStyle.
+Style/EmptyElse:
+  Enabled: true
+  EnforcedStyle: both
+
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
   Enabled: true
@@ -160,6 +165,13 @@ Style/MethodDefParentheses:
 
 # Checks whether some constant value isn't a mutable literal (e.g. array or hash)
 Style/MutableConstant:
+  Enabled: true
+
+Style/NilComparison:
+  Enabled: true
+
+# Checks for non-nil checks, which are usually redundant.
+Style/NonNilCheck:
   Enabled: true
 
 # Checks for big numeric literals without _ between groups of digits in them
