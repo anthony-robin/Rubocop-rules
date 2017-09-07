@@ -8,6 +8,7 @@ This project contains the default `Rubocop` rules that can be applied to any pro
 inherit_from:
   - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml # Regular cops
   - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-rails.yml # Rails cops
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-rspec.yml # RSpec cops
 ```
 
 In some case, you might want to override rules: no problem! Just add your new rule **after** the `inherit_from` lines:
