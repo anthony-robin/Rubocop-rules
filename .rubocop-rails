@@ -1,0 +1,137 @@
+Rails:
+  Enabled: true
+
+# This cop enforces the consistent use of action filter methods.
+Rails/ActionFilter:
+  Enabled: true
+
+# This cop checks that ActiveSupport aliases to core ruby methods are not used.
+Rails/ActiveSupportAliases:
+  Enabled: true
+
+# This cop checks that jobs subclass ApplicationJob with Rails 5.0.
+Rails/ApplicationJob:
+  Enabled: true
+
+# This cop checks that models subclass ApplicationRecord with Rails 5.0.
+Rails/ApplicationRecord:
+  Enabled: true
+
+# This cops checks for code that can be changed to blank?
+Rails/Blank:
+  Enabled: true
+
+# This cop checks for the correct use of Date methods, such as Date.today, Date.current etc.
+Rails/Date:
+  Enabled: true
+
+# This cop looks for delegations that could have been created automatically with the delegate method.
+Rails/Delegate:
+  Enabled: true
+
+# This cop looks for delegations that pass :allow_blank as an option instead of :allow_nil. :allow_blank is not a valid option to pass to ActiveSupport#delegate.
+Rails/DelegateAllowBlank:
+  Enabled: true
+
+# This cop checks dynamic find_by_* methods.
+Rails/DynamicFindBy:
+  Enabled: true
+
+# This cop looks for duplicate values in enum declarations.
+Rails/EnumUniqueness:
+  Enabled: true
+
+# This cop enforces that 'exit' calls are not used within a rails app.
+Rails/Exit:
+  Enabled: true
+
+# This cop is used to identify usages of file path joining process to use Rails.root.join clause.
+Rails/FilePath:
+  Enabled: true
+
+# This cop is used to identify usages of where.first and change them to use find_by instead.
+Rails/FindBy:
+  Enabled: true
+
+# This cop is used to identify usages of all.each and change them to use all.find_each instead.
+Rails/FindEach:
+  Enabled: true
+
+# This cop checks for the use of the has_and_belongs_to_many macro.
+Rails/HasAndBelongsToMany:
+  Enabled: true
+
+# FIXME: this throws an `unrecognized cop` error
+# This cop looks for has_many or has_one associations that don't specify a :dependent option.
+# Rails/HasManyOrHasOneDependent:
+#   Enabled: false
+
+# This cop is used to identify usages of http methods like get, post, put, patch without the usage of keyword arguments in your tests and change them to use keyword args
+Rails/HttpPositionalArguments:
+  Enabled: true
+
+# This cop checks for add_column call with NOT NULL constraint in migration file.
+Rails/NotNullColumn:
+  Enabled: false
+
+# This cop checks for the use of output calls like puts and print
+Rails/Output:
+  Enabled: false
+
+# This cop checks for the use of output safety calls like html_safe, raw, and safe_concat
+Rails/OutputSafety:
+  Enabled: false
+
+# This cop checks for correct grammar when using ActiveSupport's core extensions to the numeric classes.
+Rails/PluralizationGrammar:
+  Enabled: true
+
+# This cops checks for code that can be changed to blank?
+Rails/Present:
+  Enabled: true
+
+# This cop checks for the use of the read_attribute or write_attribute methods.
+Rails/ReadWriteAttribute:
+  Enabled: true
+
+# This cop checks whether constant value isn't relative date.
+Rails/RelativeDateConstant:
+  Enabled: true
+
+# This cop checks for consistent uses of request.referer or request.referrer, depending on the cop's configuration.
+Rails/RequestReferer:
+  Enabled: true
+  EnforcedStyle: referer
+
+# This cop checks whether the change method of the migration file is reversible.
+Rails/ReversibleMigration:
+  Enabled: false
+
+# This cop converts usages of try! to &.
+Rails/SafeNavigation:
+  Enabled: true
+  ConvertTry: true
+
+# This cop identifies possible cases where Active Record save! or related should be used instead of save because the model might have failed to save and an exception is better than unhandled failure.
+Rails/SaveBang:
+  Enabled: true
+
+# This cop checks for scope calls where it was passed a method (usually a scope) instead of a lambda/proc.
+Rails/ScopeArgs:
+  Enabled: true
+
+# This cop checks for the use of methods which skip validations.
+Rails/SkipsModelValidations:
+  Enabled: false
+
+# This cop checks for the use of Time methods without zone.
+Rails/TimeZone:
+  Enabled: true
+
+# Prefer the use of uniq (or distinct), before pluck instead of after.
+Rails/UniqBeforePluck:
+  Enabled: true
+
+# This cop checks for the use of old-style attribute validation macros.
+Rails/Validation:
+  Enabled: true
