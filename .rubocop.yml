@@ -5,8 +5,8 @@ AllCops:
   DisabledByDefault: true # Disable all cops by default
   Exclude:
     - 'db/**/*'
-    - 'vendor/**/*'
     - 'node_modules/**/*'
+    - 'vendor/**/*'
 
 # Align `when` with `case`.
 Layout/CaseIndentation:
@@ -112,6 +112,10 @@ Lint/EndAlignment:
 Lint/RequireParentheses:
   Enabled: true
 
+# Checks for unused block arguments
+Lint/UnusedBlockArgument:
+  Enabled: true
+
 # Checks for unused method arguments
 Lint/UnusedMethodArgument:
   Enabled: true
@@ -123,6 +127,10 @@ Performance/StringReplacement:
 # Prefer &&/|| over and/or.
 Style/AndOr:
   Enabled: true
+
+# Check for uses of braces or do/end around single line or multi-line blocks.
+Style/BlockDelimiters:
+  EnforcedStyle: line_count_based
 
 # Do not use braces for hash literals when they are the last argument of a
 # method call.
@@ -154,11 +162,16 @@ Style/MethodDefParentheses:
 Style/MutableConstant:
   Enabled: true
 
+# Checks for big numeric literals without _ between groups of digits in them
+Style/NumericLiterals:
+  Enabled: true
+  MinDigits: 4
+
 # Enforces the consistent usage of `%`-literal delimiters.
 Style/PercentLiteralDelimiters:
   Enabled: true
   PreferredDelimiters:
-    default:  '()'
+    default: '()'
     '%i': '[]'
     '%w': '[]'
     '%W': '[]'
@@ -166,6 +179,10 @@ Style/PercentLiteralDelimiters:
 
 # This cop makes sure that predicates are named properly
 Style/PredicateName:
+  Enabled: true
+
+# Checks for uses of Object#freeze on immutable objects.
+Style/RedundantFreeze:
   Enabled: true
 
 # Do not use return for last method line
@@ -188,7 +205,7 @@ Style/StringLiterals:
 # Check for array literals made up of symbols that are not using the %i() syntax
 Style/SymbolArray:
   Enabled: true
-  
+
 # Check for trailing comma in parameter lists
 Style/TrailingCommaInArguments:
   Enabled: true
