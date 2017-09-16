@@ -1,0 +1,93 @@
+# Align `when` with `case`.
+Layout/CaseIndentation:
+  Enabled: true
+
+# Align comments with method definitions.
+Layout/CommentIndentation:
+  Enabled: true
+
+# No extra empty lines.
+Layout/EmptyLines:
+  Enabled: true
+
+# Add empty lines below private, protected, ...
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: true
+
+# In a regular class definition, no empty lines around the body.
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+
+# In a regular module definition, no empty lines around the body.
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+
+# Detect double spaces
+Layout/ExtraSpacing:
+  Enabled: true
+
+# Two spaces, no tabs (for indentation).
+Layout/IndentationWidth:
+  Enabled: true
+
+# Check whether comments have a leading space after the # denoting the start of the comment
+Layout/LeadingCommentSpace:
+  Enabled: true
+
+# Checks the indentation of the method name part in method calls that span more than one line
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: aligned
+
+# Checks for colon (:) not followed by some kind of space.
+Layout/SpaceAfterColon:
+  Enabled: true
+
+# Checks for comma (,) not followed by some kind of space.
+Layout/SpaceAfterComma:
+  Enabled: true
+
+# Checks that the equals signs in parameter default assignments have or don't have surrounding space depending on configuration.
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: true
+
+# Checks the spacing around the keywords.
+Layout/SpaceAroundKeyword:
+  Enabled: true
+
+# Checks that operators have space around them, except for ** which should not have surrounding space.
+Layout/SpaceAroundOperators:
+  Enabled: true
+
+# Use `foo {}` not `foo{}`.
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+
+# Use `foo { bar }` not `foo {bar}`.
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+
+# Use `{ a: 1 }` not `{a:1}`.
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+# Checks for spaces inside ordinary round parentheses.
+Layout/SpaceInsideParens:
+  Enabled: true
+
+# Checks for whitespace within string interpolations.
+Layout/SpaceInsideStringInterpolation:
+  Enabled: true
+  EnforcedStyle: no_space
+
+# Detect hard tabs, no hard tabs.
+Layout/Tab:
+  Enabled: true
+
+# Blank lines should not have any spaces.
+Layout/TrailingBlankLines:
+  Enabled: true
+
+# No trailing whitespace.
+Layout/TrailingWhitespace:
+  Enabled: true

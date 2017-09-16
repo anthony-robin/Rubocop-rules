@@ -63,8 +63,8 @@ Rails/HasAndBelongsToMany:
 
 # FIXME: this throws an `unrecognized cop` error
 # This cop looks for has_many or has_one associations that don't specify a :dependent option.
-# Rails/HasManyOrHasOneDependent:
-#   Enabled: false
+Rails/HasManyOrHasOneDependent:
+  Enabled: true
 
 # This cop is used to identify usages of http methods like get, post, put, patch without the usage of keyword arguments in your tests and change them to use keyword args
 Rails/HttpPositionalArguments:

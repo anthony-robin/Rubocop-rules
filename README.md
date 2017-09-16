@@ -6,7 +6,14 @@ This project contains the default `Rubocop` rules that can be applied to any pro
 
 ```yaml
 inherit_from:
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml # Regular cops
+  # Regular cops
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-bundler.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-layout.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-lint.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-naming.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-performance.yml
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-style.yml
+
   - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-rails.yml # Rails cops
   - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-rspec.yml # RSpec cops
 ```

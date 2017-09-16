@@ -1,0 +1,21 @@
+# Makes sure that Ruby source files have snake_case names
+Naming/FileName:
+  Enabled: true
+
+# Makes sure that all methods use the configured style, snake_case or camelCase, for their names.
+Naming/MethodName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+# This cop makes sure that predicates are named properly
+Naming/PredicateName:
+  Enabled: true
+
+# Makes sure that all variables use the configured style, snake_case or camelCase, for their names.
+Naming/VariableName:
+  Enabled: true
+
+# Makes sure that all numbered variables use the configured style, snake_case, normalcase or non_integer, for their numbering.
+Naming/VariableNumber:
+  Enabled: true
+  EnforcedStyle: normalcase
