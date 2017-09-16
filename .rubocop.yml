@@ -8,6 +8,13 @@ AllCops:
     - 'node_modules/**/*'
     - 'vendor/**/*'
 
+# A Gem's requirements should be listed only once in a Gemfile.
+Bundler/DuplicatedGem:
+  Enabled: true
+
+Bundler/InsecureProtocolSource:
+  Enabled: true
+
 # Align `when` with `case`.
 Layout/CaseIndentation:
   Enabled: true
@@ -107,6 +114,10 @@ Layout/TrailingWhitespace:
 Lint/EndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: variable
+
+# Checks for redundant with_index.
+Lint/RedundantWithIndex:
+  Enabled: true
 
 # Checks for uses of rescue with no error class specified.
 Lint/RescueWithoutErrorClass:
