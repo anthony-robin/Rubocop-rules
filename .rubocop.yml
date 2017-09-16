@@ -108,6 +108,10 @@ Lint/EndAlignment:
   Enabled: true
   EnforcedStyleAlignWith: variable
 
+# Checks for uses of rescue with no error class specified.
+Lint/RescueWithoutErrorClass:
+  Enabled: true
+
 # Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
 Lint/RequireParentheses:
   Enabled: true
@@ -120,8 +124,51 @@ Lint/UnusedBlockArgument:
 Lint/UnusedMethodArgument:
   Enabled: true
 
+# Makes sure that Ruby source files have snake_case names
+Naming/FileName:
+  Enabled: true
+
+# Makes sure that all methods use the configured style, snake_case or camelCase, for their names.
+Naming/MethodName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+# This cop makes sure that predicates are named properly
+Naming/PredicateName:
+  Enabled: true
+
+# Makes sure that all variables use the configured style, snake_case or camelCase, for their names.
+Naming/VariableName:
+  Enabled: true
+
+# Makes sure that all numbered variables use the configured style, snake_case, normalcase or non_integer, for their numbering.
+Naming/VariableNumber:
+  Enabled: true
+  EnforcedStyle: normalcase
+
+# Identify usages of count on an Enumerable that follow calls to select or  reject.
+# Querying logic can instead be passed to the count call.
+Performance/Count:
+  Enabled: true
+
+# Checks for uses of `each_key` & `each_value` Hash methods.
+Performance/HashEachMethods:
+  Enabled: true
+
+# Identifies places where Hash#merge! can be replaced by Hash#[]=.
+Performance/RedundantMerge:
+  Enabled: true
+
+# Identify usages of count on an Array and Hash and change them to size.
+Performance/Size:
+  Enabled: true
+
 # This cop identifies places where `gsub` can be replaced by `tr` or `delete`.
 Performance/StringReplacement:
+  Enabled: true
+
+# Checks for .times.map calls. In most cases such calls can be replaced with an explicit array creation.
+Performance/TimesMap:
   Enabled: true
 
 # Prefer &&/|| over and/or.
@@ -189,12 +236,20 @@ Style/PercentLiteralDelimiters:
     '%W': '[]'
     '%r': '{}'
 
-# This cop makes sure that predicates are named properly
-Style/PredicateName:
+# Checks for redundant returning of true/false in conditionals.
+Style/RedundantConditional:
+  Enabled: true
+
+# Checks for RuntimeError as the argument of raise/fail.
+Style/RedundantException:
   Enabled: true
 
 # Checks for uses of Object#freeze on immutable objects.
 Style/RedundantFreeze:
+  Enabled: true
+
+# Checks for redundant parentheses.
+Style/RedundantParentheses:
   Enabled: true
 
 # Do not use return for last method line
