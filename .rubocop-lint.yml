@@ -1,0 +1,25 @@
+# Align `end` with the matching keyword or starting expression except for
+# assignments, where it should be aligned with the LHS.
+Lint/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: variable
+
+# Checks for redundant with_index.
+Lint/RedundantWithIndex:
+  Enabled: true
+
+# Checks for uses of rescue with no error class specified.
+Lint/RescueWithoutErrorClass:
+  Enabled: true
+
+# Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
+Lint/RequireParentheses:
+  Enabled: true
+
+# Checks for unused block arguments
+Lint/UnusedBlockArgument:
+  Enabled: true
+
+# Checks for unused method arguments
+Lint/UnusedMethodArgument:
+  Enabled: true

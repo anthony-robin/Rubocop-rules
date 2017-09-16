@@ -1,0 +1,127 @@
+# Prefer &&/|| over and/or.
+Style/AndOr:
+  Enabled: true
+
+# Check for uses of braces or do/end around single line or multi-line blocks.
+Style/BlockDelimiters:
+  EnforcedStyle: line_count_based
+
+# Do not use braces for hash literals when they are the last argument of a
+# method call.
+Style/BracesAroundHashParameters:
+  Enabled: true
+
+# Checks the style of children definitions at classes and modules
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: nested
+
+# Check for if and case statements where each branch is used for assignment to the same variable when using the return of the condition can be used instead
+Style/ConditionalAssignment:
+  Enabled: true
+
+# Checks for empty else-clauses, possibly including comments and/or an explicit `nil` depending on the EnforcedStyle.
+Style/EmptyElse:
+  Enabled: true
+  EnforcedStyle: both
+
+# Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
+Style/HashSyntax:
+  Enabled: true
+
+# If the `else` branch of a conditional consists solely of an `if` node, it can be combined with the `else` to become an `elsif`
+Style/IfInsideElse:
+  Enabled: true
+
+# Defining a method with parameters needs parentheses.
+Style/MethodDefParentheses:
+  Enabled: true
+
+# Checks whether some constant value isn't a mutable literal (e.g. array or hash)
+Style/MutableConstant:
+  Enabled: true
+
+Style/NilComparison:
+  Enabled: true
+
+# Checks for non-nil checks, which are usually redundant.
+Style/NonNilCheck:
+  Enabled: true
+
+# Checks for big numeric literals without _ between groups of digits in them
+Style/NumericLiterals:
+  Enabled: true
+  MinDigits: 4
+
+# Enforces the consistent usage of `%`-literal delimiters.
+Style/PercentLiteralDelimiters:
+  Enabled: true
+  PreferredDelimiters:
+    default: '()'
+    '%i': '[]'
+    '%w': '[]'
+    '%W': '[]'
+    '%r': '{}'
+
+# Checks for redundant returning of true/false in conditionals.
+Style/RedundantConditional:
+  Enabled: true
+
+# Checks for RuntimeError as the argument of raise/fail.
+Style/RedundantException:
+  Enabled: true
+
+# Checks for uses of Object#freeze on immutable objects.
+Style/RedundantFreeze:
+  Enabled: true
+
+# Checks for redundant parentheses.
+Style/RedundantParentheses:
+  Enabled: true
+
+# Do not use return for last method line
+Style/RedundantReturn:
+  Enabled: true
+
+# Checks for redundant uses of self
+Style/RedundantSelf:
+  Enabled: true
+
+# Checks for uses of `fail` and `raise`
+Style/SignalException:
+  Enabled: true
+
+# Check quotes usage according to lint rule below.
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+# Check for array literals made up of symbols that are not using the %i() syntax
+Style/SymbolArray:
+  Enabled: true
+
+# Check for trailing comma in parameter lists
+Style/TrailingCommaInArguments:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
+
+# Check for trailing comma in array and hash literals
+Style/TrailingCommaInLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: no_comma
+
+# This cop looks for unless expressions with else clauses
+Style/UnlessElse:
+  Enabled: true
+
+# Checks for strings that are just an interpolated expression.
+Style/UnneededInterpolation:
+  Enabled: true
+
+# Use quotes for string literals when they are enough.
+Style/UnneededPercentQ:
+  Enabled: true
+
+# Check for array literals made up of word-like strings, that are not using the %w() syntax
+Style/WordArray:
+  Enabled: true
