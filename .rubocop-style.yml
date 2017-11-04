@@ -16,6 +16,10 @@ Style/ClassAndModuleChildren:
   Enabled: true
   EnforcedStyle: nested
 
+# Checks for comments put after the `end` keyword
+Style/CommentedEnd:
+  Enabled: true
+
 # Check for if and case statements where each branch is used for assignment to the same variable when using the return of the condition can be used instead
 Style/ConditionalAssignment:
   Enabled: true
@@ -35,6 +39,10 @@ Style/IfInsideElse:
 
 # Defining a method with parameters needs parentheses.
 Style/MethodDefParentheses:
+  Enabled: true
+
+# Checks that `include`, `extend` and `prepend` exists at the top level.
+Style/MixinUsage:
   Enabled: true
 
 # Checks whether some constant value isn't a mutable literal (e.g. array or hash)
@@ -89,6 +97,10 @@ Style/RedundantSelf:
 
 # Checks for uses of `fail` and `raise`
 Style/SignalException:
+  Enabled: true
+
+# This cop identifies places where `$stderr.puts` can be replaced by `warn`.
+Style/StderrPuts:
   Enabled: true
 
 # Check quotes usage according to lint rule below.
