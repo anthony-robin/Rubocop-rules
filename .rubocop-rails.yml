@@ -132,6 +132,10 @@ Rails/TimeZone:
 Rails/UniqBeforePluck:
   Enabled: true
 
+# Checks that environments called with `Rails.env` predicates exist.
+Rails/UnknownEnv:
+  Enabled: true
+
 # This cop checks for the use of old-style attribute validation macros.
 Rails/Validation:
   Enabled: true
