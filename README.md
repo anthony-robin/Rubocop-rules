@@ -6,17 +6,13 @@ This project contains the default `Rubocop` rules that can be applied to any pro
 
 ```yaml
 inherit_from:
-  # Regular cops
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-bundler.yml
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-layout.yml
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-lint.yml
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-naming.yml
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-performance.yml
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-style.yml
-
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-rails.yml # Rails cops
-  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop-rspec.yml # RSpec cops
+  - https://raw.githubusercontent.com/anthony-robin/rubocop-rules/master/.rubocop.yml
 ```
+
+This will import three files:
+- `.rubocop.yml` to inherit from
+- `.rubocop-custom` that contains updated rules
+- `.rubocop-disabled` that contains disabled rules
 
 In some case, you might want to override rules: no problem! Just add your new rule **after** the `inherit_from` lines:
 
